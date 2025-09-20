@@ -7,7 +7,7 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "node ./node_modules/vite/bin/vite.js build && node ./scripts/copy-build-to-dist.js",
+            "build": "node ./node_modules/vite/bin/vite.js build",
             "lint": "eslint .",
             "preview": "vite preview"
       },
