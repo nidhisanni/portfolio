@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Sun, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -64,8 +64,9 @@ export function Header() {
               onClick={() => setDark(!dark)}
               className="ml-2 p-2 rounded-full bg-secondary hover:bg-accent transition-colors"
               aria-label="Toggle dark mode"
+              title={dark ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {dark ? "🌙" : "☀️"}
+              {dark ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
             </button>
           </div>
         </nav>
