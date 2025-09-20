@@ -4,7 +4,7 @@
       "private": true,
       "scripts": {
             "dev": "vite",
-            "build": "vite build",
+            "build": "vite build && node ./scripts/copy-build-to-dist.js",
             "lint": "eslint .",
             "preview": "vite preview"
       },
